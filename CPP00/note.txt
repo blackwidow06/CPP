@@ -1,0 +1,11 @@
+
+std:: << "hello world" -> vers la sortie standard
+<< std::endl -> suivie d'un retour a la ligne 
+std:: << "hello:"; -> vers la sortie standard sans retour a la ligne 
+std::cin >> -> recuper une donnee depuis l'entree standard
+std::cout << "you entered [" << buff <<"]" << std::endl;
+
+return :
+hello world
+hello : machin
+you entered [machin]
