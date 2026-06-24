@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/13 14:36:30 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/19 18:15:58 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/06/23 16:45:01 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,13 @@ private:
 	int	count;
 	int index;
 
+	void displayChosenContact();
+
 public:
 	PhoneBook();
 
 	void addContact();
+	void searchContact();
 };
 
 #endif

@@ -9,3 +9,18 @@ return :
 hello world
 hello : machin
 you entered [machin]
+
+
+la banque veut connaitre :
+
+pour chaque compte :
+- combien il possede (_amount)
+- combien de depots il a recus (_nbdeposits)
+- combien de retraits il a faits (nbwithdrawals)
+- son numero (accountindex)
+
+pour tous les comptes reunis :
+- combien de comtes existent (nbaccount)
+- combien d'argent il y eu au total (totalamount)
+- combien de depots ont ete effectue (totalnbdeposits)
+- combien de retraits ont ete effectues (totalnbwithdrawals)
