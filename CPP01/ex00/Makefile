@@ -5,33 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/06/20 13:04:44 by malavaud          #+#    #+#              #
-#    Updated: 2026/06/24 16:20:55 by malavaud         ###   ########.fr        #
+#    Created: 2026/06/24 16:33:39 by malavaud          #+#    #+#              #
+#    Updated: 2026/06/24 16:33:40 by malavaud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = account
-
-CC = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
-
-SRC = Account.cpp tests.cpp
-OBJ = $(SRC:.cpp=.o)
-
-all: $(NAME)
-
-$(NAME): $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
-
-%.o: %.cpp
-	$(CC) $(CFLAGS) -c $< -o $@
-
-clean:
-	rm -f $(OBJ)
-
-fclean: clean
-	rm -f $(NAME)
-
-re: fclean all
-
-.PHONY: all clean fclean re
