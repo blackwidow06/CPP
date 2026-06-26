@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 16:35:25 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/24 17:39:08 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/06/26 11:51:55 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,16 @@
 class Zombie
 {
 private:
+	std::string name;
 
 public:
-	void annonce(void);
-}
+	Zombie (std::string name);
+	~Zombie();
+	
+	void annonce();
+};
+
+Zombie* newZombie(std::string name);
+void randomChump(std::string name);
 
 #endif

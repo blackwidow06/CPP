@@ -1,29 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 16:34:08 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/26 14:28:01 by malavaud         ###   ########.fr       */
+/*   Created: 2026/06/26 11:58:55 by malavaud          #+#    #+#             */
+/*   Updated: 2026/06/26 15:01:32 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie (std::string name)
+int main(void)
 {
-	this->name = name; /*ajout de name a cet objet*/
-}
+	Zombie* horde = zombieHorde(5, "Dustin");
 
-void Zombie::annonce()
-{
-	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	int i;
+	i = 0;
+	while (i < 5)
+	{
+		horde[i].annonce();
+		i++;
+	}
+	delete[] horde;
+	return (0);
 }
-
-Zombie::~Zombie()
-{
-	std::cout << name << " destroyed" << std::endl;
-}
-

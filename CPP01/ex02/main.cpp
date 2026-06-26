@@ -5,21 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 16:33:53 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/26 14:43:55 by malavaud         ###   ########.fr       */
+/*   Created: 2026/06/26 15:03:07 by malavaud          #+#    #+#             */
+/*   Updated: 2026/06/26 15:52:33 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include <iostream>
 
 int main(void)
 {
-	Zombie* zombie = newZombie("Kylian");
+	std::string string;
+	std::string *stringPTR;
 
-	zombie->annonce();
+	string =  "HI THIS IS BRAIN";
+	stringPTR = &string;
+	std::string &stringREF = string;
 
-	delete zombie;
-	randomChump("Ousmane");
+	std::cout << "Adress of string: " << &string << std::endl;
+	std::cout << "Adress of PTR: " << stringPTR << std::endl;
+	std::cout << "Adress of REF: " << &stringREF << std::endl;
 
+	std::cout << "Value of string: " << string << std::endl;
+	std::cout << "Value of PTR: " << *stringPTR << std::endl;
+	std::cout << "Value of REF: " << stringREF <<std::endl;
 	return (0);
 }

@@ -5,25 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/24 16:34:08 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/26 14:28:01 by malavaud         ###   ########.fr       */
+/*   Created: 2026/06/26 11:59:17 by malavaud          #+#    #+#             */
+/*   Updated: 2026/06/26 15:00:38 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie (std::string name)
+Zombie::Zombie()
 {
-	this->name = name; /*ajout de name a cet objet*/
+	
 }
 
-void Zombie::annonce()
+void Zombie::annonce(void)
 {
 	std::cout << name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
 Zombie::~Zombie()
 {
-	std::cout << name << " destroyed" << std::endl;
+	std::cout << name << " destroyed" << std::endl;	
 }
 
+void Zombie::setName(std::string zombieName)
+{
+    name = zombieName;
+}

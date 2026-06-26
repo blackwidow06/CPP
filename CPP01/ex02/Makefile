@@ -5,20 +5,17 @@
 #                                                     +:+ +:+         +:+      #
 #    By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/06/24 16:33:39 by malavaud          #+#    #+#              #
-#    Updated: 2026/06/26 11:50:59 by malavaud         ###   ########.fr        #
+#    Created: 2026/06/26 15:03:00 by malavaud          #+#    #+#              #
+#    Updated: 2026/06/26 15:52:52 by malavaud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = brain
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRC = main.cpp \
-	  Zombie.cpp \
-	  newZombie.cpp \
-	  randomChump.cpp
+SRC = main.cpp
 
 OBJ = $(SRC:.cpp=.o)
 
@@ -27,7 +24,7 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.cpp Zombie.hpp
+%.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
