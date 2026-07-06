@@ -6,9 +6,11 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 14:20:41 by malavaud          #+#    #+#             */
-/*   Updated: 2026/07/02 14:22:12 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/07/03 16:53:22 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "Fixed.hpp"
 
 int main(void)
 {
