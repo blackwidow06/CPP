@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/07 09:57:13 by malavaud          #+#    #+#             */
-/*   Updated: 2026/07/07 12:04:40 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/07/08 13:56:14 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ private:
 	std::string name;
 	int hitPoints;
 	int energyPoints;
-	int atackDamage;
+	int attackDamage;
 public:
 	ClapTrap();
 	ClapTrap(std::string name);

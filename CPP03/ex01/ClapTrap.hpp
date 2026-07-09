@@ -1,0 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/07/07 09:57:13 by malavaud          #+#    #+#             */
+/*   Updated: 2026/07/09 16:18:03 by malavaud         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef CLAPTRAP_HPP
+#define CLAPTRAP_HPP
+
+#include <iostream>
+
+class ClapTrap
+{
+protected:
+	std::string name;
+	int hitPoints;
+	int energyPoints;
+	int attackDamage;
+public:
+	ClapTrap(std::string name);
+	~ClapTrap();
+	
+	void attack(const std::string& target);
+	void takeDamage(unsigned int amount);
+	void beRepaired(unsigned int amount);
+
+};
+
+#endif
