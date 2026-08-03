@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/13 14:36:34 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/23 17:02:22 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/07/14 10:32:43 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,31 +67,31 @@ void PhoneBook::searchContact()
 
 void PhoneBook::displayChosenContact()
 {
-    std::string input;
-    int choice;
+	std::string input;
+	int choice;
 
-    std::cout << "Index: ";
-    std::getline(std::cin, input);
-    if (input.empty())
-    {
-        std::cout << "Invalid index" << std::endl;
-        return;
+	std::cout << "Index: ";
+	std::getline(std::cin, input);
+	if (input.empty())
+	{
+		std::cout << "Invalid index" << std::endl;
+		return;
 	}
 	
-    size_t i = 0;
-    while (i < input.length())
-    {
-        if (!std::isdigit(input[i]))
-        {
-            std::cout << "Invalid index" << std::endl;
-            return;
-        }
-        i++;
-    }
+	size_t i = 0;
+	while (i < input.length())
+	{
+		if (!std::isdigit(input[i]))
+		{
+			std::cout << "Invalid index" << std::endl;
+			return;
+		}
+		i++;
+	}
 	
-    choice = std::atoi(input.c_str());
-    if (choice >= 0 && choice < count)
-        contacts[choice].printInfos();
-    else
-        std::cout << "Invalid index" << std::endl;
+	choice = std::atoi(input.c_str());
+	if (choice >= 0 && choice < count)
+		contacts[choice].printInfos();
+	else
+		std::cout << "Invalid index" << std::endl;
 }

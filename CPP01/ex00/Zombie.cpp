@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/24 16:34:08 by malavaud          #+#    #+#             */
-/*   Updated: 2026/06/26 14:28:01 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/08/03 11:00:47 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 Zombie::Zombie (std::string name)
 {
-	this->name = name; /*ajout de name a cet objet*/
+	this->name = name;
 }
 
 void Zombie::annonce()
