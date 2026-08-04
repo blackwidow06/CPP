@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/13 11:54:25 by malavaud          #+#    #+#             */
-/*   Updated: 2026/07/13 12:05:49 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:59:36 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ANIMAL_HPP
 
 #include <iostream>
+#include <string>
 
 class Animal
 {

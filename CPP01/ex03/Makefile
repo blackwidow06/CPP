@@ -6,7 +6,7 @@
 #    By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/06/29 10:30:30 by malavaud          #+#    #+#              #
-#    Updated: 2026/06/29 14:06:53 by malavaud         ###   ########.fr        #
+#    Updated: 2026/08/04 14:27:07 by malavaud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,15 +20,19 @@ SRC = main.cpp \
 	  HumanA.cpp \
 	  HumanB.cpp
 
-OBJ = $(SRC:.cpp=.o)
+OBJ_DIR = obj
+OBJS = $(SRCS:%.cpp=$(OBJ_DIR)/%.o)
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
 	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
 
-%.o: %.cpp Weapon.hpp HumanA.hpp HumanB.hpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
+
+$(OBJ_DIR)/%.o: %.cpp | $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJ)

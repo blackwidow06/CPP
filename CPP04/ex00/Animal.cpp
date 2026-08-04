@@ -6,17 +6,14 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/13 11:44:21 by malavaud          #+#    #+#             */
-/*   Updated: 2026/08/03 16:10:45 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/08/04 11:58:18 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-#include "Animal.hpp"
-
-Animal::Animal() :
+Animal::Animal() : type("Animal")
 {
-	type = "Animal";
 	std::cout << "Animal constructor called" << std::endl;
 }
 
