@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/04 16:01:22 by malavaud          #+#    #+#             */
-/*   Updated: 2026/08/05 14:47:16 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/10/19 09:02:59 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 class Brain
 {
 private:
-	std::string ideas[100];
+	
 
 public:
 	Brain();
@@ -28,6 +28,7 @@ public:
 	Brain &operator=(const Brain &other);
 	
 	std::string &getIdea(int index);
+	std::string ideas[100];
 };
 
 #endif
