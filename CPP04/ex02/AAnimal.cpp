@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/13 11:44:21 by malavaud          #+#    #+#             */
-/*   Updated: 2026/08/10 11:28:40 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/10/21 10:26:35 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,12 @@
 
 AAnimal::AAnimal() : type("AAnimal")
 {
-	std::cout << "Animal constructor called" << std::endl;
+	std::cout << "AAnimal constructor called" << std::endl;
 }
 
 AAnimal::~AAnimal()
 {
 	std::cout << "AAnimal destructor called" << std::endl;
-}
-
-void AAnimal::makeSound() const
-{
-	std::cout << "Some generic animal sound" << std::endl;
 }
 
 std::string AAnimal::getType() const
