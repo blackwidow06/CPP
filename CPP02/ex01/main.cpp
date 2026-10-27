@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/02 14:20:41 by malavaud          #+#    #+#             */
-/*   Updated: 2026/07/03 16:53:22 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/10/05 14:38:09 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int main(void)
 	std::cout << "c is " << c << std::endl;
 	std::cout << "d is " << d << std::endl;
 	
-	std::cout << "a is " << a.toInt() << " as integer" << std::endl;
-	std::cout << "b is " << b.toInt() << " as integer" << std::endl;
-	std::cout << "c is " << c.toInt() << " as integer" << std::endl;
-	std::cout << "d is " << d.toInt() << " as integer" << std::endl;
+	std::cout << "a is " << a.toFloat() << " as integer" << std::endl;
+	std::cout << "b is " << b.toFloat() << " as integer" << std::endl;
+	std::cout << "c is " << c.toFloat() << " as integer" << std::endl;
+	std::cout << "d is " << d.toFloat() << " as integer" << std::endl;
 	
 	return (0);
 }
