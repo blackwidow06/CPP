@@ -6,7 +6,7 @@
 /*   By: malavaud <malavaud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/30 10:22:16 by malavaud          #+#    #+#             */
-/*   Updated: 2026/10/26 09:25:57 by malavaud         ###   ########.fr       */
+/*   Updated: 2026/11/17 12:58:56 by malavaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ public:
 			const char *what() const throw();
 	};
 	
-	class GradeTooLowExecption : public std::exception
+	class GradeTooLowException : public std::exception
 	{
 		public:
 			const char *what() const throw();
